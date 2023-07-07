@@ -56,4 +56,6 @@ h1{
 .quiz-btn:hover{
     box-shadow: 0 0 15px #f5f5f5;
     cursor: pointer;
+    transition: transform 200ms;
+    transform: scale(1.05);
 }
