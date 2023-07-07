@@ -14,9 +14,10 @@ body{
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 5rem;
     color: #f5f5f5;
     margin-bottom: 2.5rem;
+    text-shadow: 2px 2px 2px black;
 }
 
 .quiz-container{
@@ -27,4 +28,27 @@ h1{
     display: flex;
     margin: 0 auto;
     padding: 1rem;
+}
+
+.quiz-colum{
+    display:flex;
+    flex-direction: column;
+}
+
+.quiz-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-btn{
+    background-color: #0DAB76;
+    color: #f5f5f5;
+    width: 20rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 0;
+    border-radius: 1rem;
+    text-shadow: 2px 2px 2px black;
 }
