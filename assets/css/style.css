@@ -52,3 +52,6 @@ h1{
     border-radius: 1rem;
     text-shadow: 2px 2px 2px black;
 }
+.quiz-btn:hover{
+    box-shadow: 0 0 15px #f5f5f5;
+}
