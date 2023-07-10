@@ -210,6 +210,7 @@ body{
     font-size: 1.25rem;
     font-weight: bold;
     letter-spacing: .1rem;
+    text-align: center;
 }
 
 .quiz-questions .question{
@@ -238,4 +239,29 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.quiz-footer .quiz-total{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.quiz-footer .next-btn{
+    width: 5rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+    border-radius: .25rem;
+    font-weight: bolder;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.quiz-footer .next-btn:hover{
+    background: #007DA7;
+    color: #f5f5f5;
+    border: 2px solid #f5f5f5;
 }
