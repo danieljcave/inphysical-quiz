@@ -77,7 +77,7 @@ h1{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(.9);
     width: 30rem;
     background: #17181A;
     border-radius: 1rem;
@@ -85,11 +85,12 @@ h1{
     border: 2px solid #f5f5f5;
     opacity: 0;
     pointer-events: none;
-    transition: .5s linear;
+    transition: .25s ease;
 }
 .start-quiz-popup.current{
     opacity: 1;
     pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .start-quiz-popup h2{
