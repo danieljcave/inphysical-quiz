@@ -211,6 +211,7 @@ body{
     font-weight: bold;
     letter-spacing: .1rem;
     text-align: center;
+    margin-top: 2.5rem;
 }
 
 .quiz-questions .question{
@@ -239,6 +240,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .quiz-footer .quiz-total{
