@@ -83,6 +83,8 @@ h1{
     border-radius: 1rem;
     padding: 1rem 2rem;
     border: 2px solid #f5f5f5;
+    opacity: 0;
+    pointer-events: none;
 }
 .start-quiz-popup h2{
     color: #f5f5f5;
