@@ -6,6 +6,7 @@ body{
     background: #17181A;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .main{
     background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, .6)), url("../images/background-image.jpg");
@@ -18,6 +19,12 @@ body{
     filter: blur(1rem);
 }
 
+.quiz-container{
+    display: flex;
+    height: 100vh;
+    width: 200%;
+}
+
 h1{
     font-size: 5rem;
     color: #f5f5f5;
@@ -26,8 +33,9 @@ h1{
 }
 
 .cover-container{
+    position: relative;
+    left: -50%;
     width: 100%;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -142,4 +150,11 @@ h1{
 .start-quiz-popup .popup-btn .about-btn:hover{
     background: transparent;
     color: #007DA7;
+}
+
+.quiz-section{
+    position: relative;
+    left: -50%;
+    width: 100%;
+    background: pink;
 }
