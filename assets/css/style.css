@@ -269,7 +269,7 @@ body{
     border-radius: .25rem;
     font-weight: bolder;
     cursor: pointer;
-    pointer-events: none;
+    /* pointer-events: none; */
     transition: .5s;
 }
 

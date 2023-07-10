@@ -21,4 +21,28 @@ continueBtn.onclick = () => {
     quizPopup.classList.remove('current');
     quizMain.classList.remove('current');
     quizBox.classList.add('current');
+    showQuestions(0);
+}
+
+let questionCount = 0;
+
+const nextBtn = document.querySelector('.next-btn');
+
+nextBtn.onclick = () => {
+    questionCount++;
+    showQuestions(questionCount);
+}
+
+const quizQuestions = document.querySelector('.quiz-questions')
+
+function showQuestions(i){
+    const questionText = document.querySelector('.question-title');
+    questionText.textContent = `${questions[i].numb}. ${questions[i].question}`
+
+    let quizTag = `<div class="question"><span>${questions[i].options[0]}</span></div>
+    <div class="question"><span>${questions[i].options[1]}</span></div>
+    <div class="question"><span>${questions[i].options[2]}</span></div>
+    <div class="question"><span>${questions[i].options[3]}</span></div>`;
+
+    quizQuestions.innerHTML = quizTag;
 }
