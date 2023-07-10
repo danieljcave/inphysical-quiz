@@ -177,6 +177,17 @@ body{
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(.9);
+}
+
+.quiz-section .quiz-box.current{
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    transition: 1s ease;
+    transition-delay: 1s;
 }
 
 .quiz-box h1{
@@ -240,7 +251,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .quiz-footer .quiz-total{
