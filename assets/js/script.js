@@ -23,10 +23,12 @@ continueBtn.onclick = () => {
     quizBox.classList.add('current');
     showQuestions(0);
     quizCounter(1);
+    headerScore(0);
 }
 
 let questionCount = 0;
 let questionNumb = 1;
+let userScore = 0;
 
 const nextBtn = document.querySelector('.next-btn');
 
@@ -68,6 +70,8 @@ function questionSelected(answer){
     
     if (userAnswer === correctAnswer){
         answer.classList.add('correct')
+        userScore += 1;
+        headerScore();
     } else {
 
         answer.classList.add('incorrect')
@@ -86,4 +90,9 @@ function questionSelected(answer){
 function quizCounter(i){
     const quizTotal = document.querySelector('.quiz-total')
     quizTotal.textContent = `${i} of ${questions.length} Questions`
+}
+
+function headerScore(){
+    const headerScoreText = document.querySelector('.header-score');
+    headerScoreText.textContent = `Score ${userScore} / ${questions.length}`;
 }
