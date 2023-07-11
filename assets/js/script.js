@@ -1,23 +1,23 @@
-const quizStart = document.querySelector('.quiz-btn')
-const quizPopup = document.querySelector('.start-quiz-popup')
-const quizExit = document.querySelector('.exit-btn')
-const quizMain = document.querySelector('.main')
-const continueBtn = document.querySelector('.continue-btn')
-const quizSection = document.querySelector('.quiz-section')
-const quizBox = document.querySelector('.quiz-box')
-const resultBox = document.querySelector('.result-box')
-const tryAgainBtn = document.querySelector('.try-again-btn')
-const homeBtn = document.querySelector('.home-button')
+const quizStart = document.querySelector('.quiz-btn');
+const quizPopup = document.querySelector('.start-quiz-popup');
+const quizExit = document.querySelector('.exit-btn');
+const quizMain = document.querySelector('.main');
+const continueBtn = document.querySelector('.continue-btn');
+const quizSection = document.querySelector('.quiz-section');
+const quizBox = document.querySelector('.quiz-box');
+const resultBox = document.querySelector('.result-box');
+const tryAgainBtn = document.querySelector('.try-again-btn');
+const homeBtn = document.querySelector('.home-button');
 
 quizStart.onclick = () => {
     quizPopup.classList.add('current');
     quizMain.classList.add('current');
-}
+};
 
 quizExit.onclick = () => {
     quizPopup.classList.remove('current');
     quizMain.classList.remove('current');
-}
+};
 
 continueBtn.onclick = () => {
     quizSection.classList.add('current');
@@ -27,7 +27,7 @@ continueBtn.onclick = () => {
     showQuestions(0);
     quizCounter(1);
     headerScore(0);
-}
+};
 
 tryAgainBtn.onclick = () => {
     quizBox.classList.add('current');
@@ -40,7 +40,7 @@ tryAgainBtn.onclick = () => {
     showQuestions(questionCount);
     quizCounter(questionNumb);
     headerScore();
-}
+};
 
 homeBtn.onclick = () => {
     quizSection.classList.remove('current');
@@ -52,7 +52,7 @@ homeBtn.onclick = () => {
     userScore = 0;
     showQuestions(questionCount);
     quizCounter(questionNumb);
-}
+};
 
 let questionCount = 0;
 let questionNumb = 1;
@@ -71,13 +71,13 @@ nextBtn.onclick = () => {
     else{
         showResultBox();
     }
-}
+};
 
-const quizQuestions = document.querySelector('.quiz-questions')
+const quizQuestions = document.querySelector('.quiz-questions');
 
 function showQuestions(i){
     const questionText = document.querySelector('.question-title');
-    questionText.textContent = `${questions[i].numb}. ${questions[i].question}`
+    questionText.textContent = `${questions[i].numb}. ${questions[i].question}`;
 
     let quizTag = `<div class="question"><span>${questions[i].options[0]}</span></div>
     <div class="question"><span>${questions[i].options[1]}</span></div>
@@ -98,12 +98,12 @@ function questionSelected(answer){
     let allQuestions = quizQuestions.children.length;
     
     if (userAnswer === correctAnswer){
-        answer.classList.add('correct')
+        answer.classList.add('correct');
         userScore += 1;
         headerScore();
     } else {
 
-        answer.classList.add('incorrect')
+        answer.classList.add('incorrect');
         for (let i = 0; i< allQuestions; i++){
             if (quizQuestions.children[i].textContent == correctAnswer){
                 quizQuestions.children[i].setAttribute('class', 'question correct');
@@ -119,8 +119,8 @@ function questionSelected(answer){
 }
 
 function quizCounter(i){
-    const quizTotal = document.querySelector('.quiz-total')
-    quizTotal.textContent = `${i} of ${questions.length} Questions`
+    const quizTotal = document.querySelector('.quiz-total');
+    quizTotal.textContent = `${i} of ${questions.length} Questions`;
 }
 
 function headerScore(){
@@ -133,5 +133,5 @@ function showResultBox() {
     resultBox.classList.add('current');
 
     const scoreText = document.querySelector('.score-text');
-    scoreText.textContent = `You Scored ${userScore} Out Of ${questions.length}`
+    scoreText.textContent = `You Scored ${userScore} Out Of ${questions.length}`;
 }
