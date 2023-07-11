@@ -140,26 +140,26 @@ Each question reports the correct answer to the user and displays the correct an
 ## Deployment
 ### Github Pages
 The project was deployed to git hub pages using the following steps.
-1. Log into GitHub and navigate to the project repository [InPhysical Project](https://github.com/danieljcave/inphysical-website)
+1. Log into GitHub and navigate to the project repository [InPhysical Quiz](https://github.com/danieljcave/inphysical-quiz)
 2. At the top of the repository, find an option for "Settings" on the menu.
 3. Scroll down in the settings until an option for the "GitHub Pages" section.
 4. Under the source dropdown, select "Deploy from Main Branch"
 5. The Page should then refresh automatically.
-6. Scroll back down the page and then find the link to the published page [link](https://github.com/danieljcave/inphysical-website) in the GitHub Pages section.
+6. Scroll back down the page and then find the link to the published page [link](https://github.com/danieljcave/inphysical-quiz) in the GitHub Pages section.
 
 ### Making a Local Clone
-1. Log into GitHub and navigate to the project repository [InPhysical Project](https://github.com/danieljcave/inphysical-website)
+1. Log into GitHub and navigate to the project repository [InPhysical Quiz](https://github.com/danieljcave/inphysical-quiz)
 2. Under the repository at the top of the page, select "Clone".
 3. There will be 3 options to clone from. HTTPS, SSH or Github CLI. Or Download the repository.
 4. Cloning with HTTPS, copy link and open git bash.
 5. Then type `git clone` and paste the URL following. It should look like this 
-> `git clone https://github.com/danieljcave/inphysical-website`
+> `git clone https://github.com/danieljcave/inphysical-quiz`
 6. Followed by pressing Enter, the repository will then be cloned locally.
 If there are any issues with cloning the repository, GitHub has a detailed guide with extra information if any issues arise. [Click Here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### Forking the Repository
 Forking a repository will make a copy of that repository and edit without making any changes to the original repository to mainly test ideas or changes with the repository.
-1. Log into GitHub and navigate to the project repository [InPhysical Project](https://github.com/danieljcave/inphysical-website)
+1. Log into GitHub and navigate to the project repository [InPhysical Quiz](https://github.com/danieljcave/inphysical-quiz)
 2. Scroll to the top of the repository to top where there is an option called "Fork"
 3. This will then allow you to make a copy of the repository in your GitHub account.
 
