@@ -153,8 +153,8 @@ body{
 
 .quiz-section{
     position: relative;
-    left: -50%;
-    /* left: 0; */
+    /* left: -50%; */
+    left: 0;
     width: 100%;
     background: #007DA7;
     display: flex;
