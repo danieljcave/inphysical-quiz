@@ -298,3 +298,41 @@ body{
     color: #007DA7;
     background: #f5f5f5;
 }
+
+.quiz-section .result-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-box h2{
+    font-size: 2.5rem;
+}
+
+.result-box .percentage-container{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 2rem;
+}
+
+.percentage-container .circle-progress{
+    position: relative;
+    height: 15rem;
+    width: 15rem;
+    background: white;
+    color: #007DA7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
