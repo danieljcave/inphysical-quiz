@@ -22,15 +22,24 @@ continueBtn.onclick = () => {
     quizMain.classList.remove('current');
     quizBox.classList.add('current');
     showQuestions(0);
+    quizCounter(1);
 }
 
 let questionCount = 0;
+let questionNumb = 1;
 
 const nextBtn = document.querySelector('.next-btn');
 
 nextBtn.onclick = () => {
+    if (questionCount < questions.length - 1){
     questionCount++;
     showQuestions(questionCount);
+    questionNumb++;
+    quizCounter(questionNumb);
+}
+    else{
+        console.log('Question Complete')
+    }
 }
 
 const quizQuestions = document.querySelector('.quiz-questions')
@@ -45,4 +54,9 @@ function showQuestions(i){
     <div class="question"><span>${questions[i].options[3]}</span></div>`;
 
     quizQuestions.innerHTML = quizTag;
+}
+
+function quizCounter(i){
+    const quizTotal = document.querySelector('.quiz-total')
+    quizTotal.textContent = `${i} of ${questions.length} Questions`
 }
