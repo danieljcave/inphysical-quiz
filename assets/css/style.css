@@ -260,6 +260,10 @@ body{
     box-shadow: 0 0 3px 3px #ff0000;
 } 
 
+.quiz-questions .question.disabled{
+    pointer-events: none;
+}
+
 .quiz-box .quiz-footer{
     display: flex;
     justify-content: space-between;

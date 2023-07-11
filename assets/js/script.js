@@ -63,12 +63,17 @@ function showQuestions(i){
 
 function questionSelected(answer){
     let userAnswer = answer.textContent;
-    let correctAnswer = questions[questionCount].answer
+    let correctAnswer = questions[questionCount].answer;
+    let allQuestions = quizQuestions.children.length;
     
     if (userAnswer === correctAnswer){
         answer.classList.add('correct')
     } else {
         answer.classList.add('incorrect')
+    }
+
+    for (let i = 0; i<allQuestions; i++){
+        quizQuestions.children[i].classList.add('disabled');
     }
 }
 
