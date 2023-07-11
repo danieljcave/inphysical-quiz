@@ -63,7 +63,13 @@ function showQuestions(i){
 
 function questionSelected(answer){
     let userAnswer = answer.textContent;
-    console.log(userAnswer);
+    let correctAnswer = questions[questionCount].answer
+    
+    if (userAnswer === correctAnswer){
+        console.log('answer is correct')
+    } else {
+        console.log('answer is incorrect')
+    }
 }
 
 function quizCounter(i){
