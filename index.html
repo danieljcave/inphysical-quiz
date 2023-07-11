@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-
     <title>InPhysical Quiz</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Main Section Of Quiz Code -->
     <section class="main">
-        <!-- Quiz Container and section for display Page -->
-        <div class="quiz-container">
-            <section class="quiz-section">
-                <!-- Quiz Box holds code for each question -->
-                <div class="quiz-box">
-                    <!-- Page Header -->
-                    <h1>InPhysical Quiz!</h1>
-                <!-- Quiz Title -->
-                <div class="quiz-header">
-                    <span>Fitness and Exercise Quiz</span>
-                    <!-- Heading score for the quiz -->
-                    <span class="header-score">Score 0 / 5</span>
-                </div>
-                <!-- Quiz question -->
-                <h2 class="question-title">When squatting which muscle is not used?</h2>
-                    <!-- Div Class holding quiz question answers -->
-                <div class="quiz-questions">
-                    
-                </div>   
-                <!-- Quiz Footer -->
-                    <div class="quiz-footer">
-                        <!-- Quiz Question counter -->
-                        <span class="quiz-total">1 of 5 Questions</span>
-                        <!-- Next button for nex quiz question -->
-                        <button class="next-btn">Next</button>
-                    </div>
+      <!-- Quiz Container and section for display Page -->
+      <div class="quiz-container">
+        <section class="quiz-section">
+          <!-- Quiz Box holds code for each question -->
+          <div class="quiz-box">
+            <!-- Page Header -->
+            <h1>InPhysical Quiz!</h1>
+            <!-- Quiz Title -->
+            <div class="quiz-header">
+              <span>Fitness and Exercise Quiz</span>
+              <!-- Heading score for the quiz -->
+              <span class="header-score">Score 0 / 5</span>
             </div>
-
-            <!-- HTML for quiz results -->
-            <div class="result-box">
-                <!-- Quiz result title -->
-                <h2>Quiz Results!</h2>
-                <!-- Quiz results container -->
-                <div class="results-container">
-                    <!-- Shows user score -->
-                    <span class="score-text">You Scored 0 Out Of 5</span>
-                </div>
-                <!-- Try again and Home buttom for user -->
-                <div class="buttons">
-                    <button class="try-again-btn">Try Again!</button>
-                    <button class="home-button">Home</button>
-                </div>
+            <!-- Quiz question -->
+            <h2 class="question-title">When squatting which muscle is not used?</h2>
+            <!-- Div Class holding quiz question answers -->
+            <div class="quiz-questions"></div>
+            <!-- Quiz Footer -->
+            <div class="quiz-footer">
+              <!-- Quiz Question counter -->
+              <span class="quiz-total">1 of 5 Questions</span>
+              <!-- Next button for nex quiz question -->
+              <button class="next-btn">Next</button>
             </div>
-            </section>
-        
-<!-- Main display for home page -->
+          </div>
+          <!-- HTML for quiz results -->
+          <div class="result-box">
+            <!-- Quiz result title -->
+            <h2>Quiz Results!</h2>
+            <!-- Quiz results container -->
+            <div class="results-container">
+              <!-- Shows user score -->
+              <span class="score-text">You Scored 0 Out Of 5</span>
+            </div>
+            <!-- Try again and Home buttom for user -->
+            <div class="buttons">
+              <button class="try-again-btn">Try Again!</button>
+              <button class="home-button">Home</button>
+            </div>
+          </div>
+        </section>
+        <!-- Main display for home page -->
         <div class="cover-container">
-            <div id="home" class="quiz-colum quiz-center">
-                <!-- Display homepage title -->
-                <h1>InPhysical Quiz</h1>
-                <!-- Quiz welcome message -->
-                <p>Welcome to InPhysical Quiz. We are going to test your knowledge of the body and different exercises. The quiz is designed as a fun way to learn and test your knowledge. Now go see if you can get all questions correct!</p>
-                <!-- Quiz start button -->
-                <button class="quiz-btn">Start Quiz</button>
-            </div>
+          <div id="home" class="quiz-colum quiz-center">
+            <!-- Display homepage title -->
+            <h1>InPhysical Quiz</h1>
+            <!-- Quiz welcome message -->
+            <p>Welcome to InPhysical Quiz. We are going to test your knowledge of the body and different exercises. The quiz is designed as a fun way to learn and test your knowledge. Now go see if you can get all questions correct!</p>
+            <!-- Quiz start button -->
+            <button class="quiz-btn">Start Quiz</button>
+          </div>
         </div>
-        </div>
-</section>
-
+      </div>
+    </section>
     <!-- Quiz popop information -->
-        <div class="start-quiz-popup">
-            <!-- Quiz guide title -->
-            <h2>Quiz Guide</h2>
-            <!-- List of Information to help user -->
-            <span class="quiz-info">1. The quiz questions are a range of differnt topics.</span>
-            <span class="quiz-info">2. When you click on an answer, if it shows up green that is correct.</span>
-            <span class="quiz-info">3. If you select and answer and it shows red, it is incorrect and the correct answer will be shown.</span>
-            <span class="quiz-info">4. Once you have completed all the questions, try for a top score or enjoy that you know your stuff!</span>
-            
-            <!-- Exit and Continue buttons for quiz popup -->
-            <div class="popup-btn">
-                <button class="about-btn exit-btn">Exit Quiz</button>
-                <a href="#" class="about-btn continue-btn">Continue</a>
-            </div>
-        </div>
-
+    <div class="start-quiz-popup">
+      <!-- Quiz guide title -->
+      <h2>Quiz Guide</h2>
+      <!-- List of Information to help user -->
+      <span class="quiz-info">1. The quiz questions are a range of differnt topics.</span>
+      <span class="quiz-info">2. When you click on an answer, if it shows up green that is correct.</span>
+      <span class="quiz-info">3. If you select and answer and it shows red, it is incorrect and the correct answer will be shown.</span>
+      <span class="quiz-info">4. Once you have completed all the questions, try for a top score or enjoy that you know your stuff!</span>
+      <!-- Exit and Continue buttons for quiz popup -->
+      <div class="popup-btn">
+        <button class="about-btn exit-btn">Exit Quiz</button>
+        <a href="#" class="about-btn continue-btn">Continue</a>
+      </div>
+    </div>
     <!-- Script link for quiz questions -->
     <script src="assets/js/questions.js"></script>
     <!-- Main script code for quiz -->
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
