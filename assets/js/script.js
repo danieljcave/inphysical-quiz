@@ -69,7 +69,13 @@ function questionSelected(answer){
     if (userAnswer === correctAnswer){
         answer.classList.add('correct')
     } else {
+
         answer.classList.add('incorrect')
+        for (let i = 0; i< allQuestions; i++){
+            if (quizQuestions.children[i].textContent == correctAnswer){
+                quizQuestions.children[i].setAttribute('class', 'question correct');
+            }
+        }
     }
 
     for (let i = 0; i<allQuestions; i++){
