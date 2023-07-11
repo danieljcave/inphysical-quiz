@@ -5,8 +5,8 @@
 
 The InPysical quiz is designed as a functional game but to also educate the users on the body and exercise. The Quiz is centred around questions related to Exercise and the Body. The Quiz is a free-to-play game, it educates the user while giving them a way to have fun and learn at the same time.
 
-The sit will be a single page website with a quiz built into the HTML. The code will use javascript to complete tasks and functions for the quiz.
-Along with ability to move around the page while staying on a single page.
+The site will be a single-page website with a quiz built into the HTML. The code will use javascript to complete tasks and functions for the quiz.
+Along with the ability to move around the page while staying on a single page.
 
 Live version of the site avalible - <a href="https://danieljcave.github.io/inphysical-quiz/" target="_blank">Click Here!</a>
 
@@ -42,36 +42,36 @@ Live version of the site avalible - <a href="https://danieljcave.github.io/inphy
 
 ## **User Experience**
 ### **Target Audience**
-The target audience of the quiz is all users that are interested in fitness and excersice. The Audience is from new begginers entering the fitness journey. Or experianced users with years of training and knowledge. The quiz is free and designed for new users and experianced users to test knowledge.
+The target audience of the quiz is all users that are interested in fitness and exercise. The Audience is new beginners entering the fitness journey. Or experienced users with years of training and knowledge. The quiz is free and designed for new users and experienced users to test their knowledge.
 
 ### **Website Goals**
-The primary goal of the website is to operate a functional quiz that users can use and enjoy to test there knowledge. Another goal of the website is to expand the quiz as more users complete the quiz tasks. To help new users learn and test the experianced users with harder questions.
+The primary goal of the website is to operate a functional quiz that users can use and enjoy to test their knowledge. Another goal of the website is to expand the quiz as more users complete the quiz tasks. To help new users learn and test the experienced users with harder questions.
 
 ## **User Stories**
 - ## New User Visitor Goals
-1. The website is designed to allow new users to complete a quiz on fitness and experiance.
-2. Provide a knowledge based quiz to test the users experiance and information.
-3. Have range of questions for the user to test there knowledge on.
+1. The website is designed to allow new users to complete a quiz on fitness and experience.
+2. Provide a knowledge-based quiz to test the user's experience and information.
+3. Have a range of questions for the user to test their knowledge on.
 
 - ### Returning Visitor Goals
-    1. To have users that did not score all questions correctly to try again for the top score.
-    2. Test there knowledge on each questions and allow to experince the quiz.
-    3. Center point for returning user with updating questions.
+    1. To have users that did not score all questions correctly try again for the top score.
+    2. Test their knowledge on each question and allow them to experience the quiz.
+    3. Center point for returning users with updating questions.
 
 - ## Design
     - ### Color Scheme
-        - In the website design I had choose to use 5 colors. First being #f5f5f5 (Off-White) and 17181A (Dark Grey). When first thinking of how the website should look, the primary goal was a clean and simplistic-looking site. The Main color of the quiz is (Navy Blue) 007DA7 this is a dark blue that gives the quiz a sleek and profestional view. All of the text uses the Off White color to display over the blue. Both Red and Green are used for answering questions and displaying Green, for correct answers and Red for incorrect answers.
+        - In the website design I had chosen to use 5 colors. First being #f5f5f5 (Off-White) and 17181A (Dark Grey). When first thinking of how the website should look, the primary goal was a clean and simplistic-looking site. The Main colour of the quiz is (Navy Blue) 007DA7 this is a dark blue that gives the quiz a sleek and professional view. All of the text uses the Off White colour to display over the blue. Both Red and Green are used for answering questions and displaying Green, for correct answers and Red for incorrect answers.
     - ### Imagery
-        - The quiz contains a single image, which is displayed as the background image for the website. This is to show the user that straight away is a fitness related quiz without needing to read into the quiz or information. The image was found on [Pexals](https://www.pexels.com/) which is a free image library. 
+        - The quiz contains a single image, which is displayed as the background image for the website. This is to show the user that straight away is a fitness-related quiz without needing to read into the quiz or information. The image was found on [Pexals](https://www.pexels.com/) which is a free image library. 
     - ### Typography
         - When selecting the font to choose, the same goals were alongside the colour scheme. To find a clean and simplistic font that gives the website the look of professional and friendly. The font that was chosen was "Outfit" a free available font found on [Google Fonts](https://fonts.google.com/)
 
 ## **Website Features**
-The First feature of the website is the "Start Quiz' button. When selecting the button the user is then displayed a popup information container that contains the title of the page along with any information that the user might need to complete the quiz. It contains a Exit and Continue button inside. Clicking the exit button with take the user back to the home page of the quiz. If the user selects continue, the popup icon with be coverd with a sliding page that holds the quiz container.
+The First feature of the website is the "Start Quiz' button. When selecting the button the user is then displayed a popup information container that contains the title of the page along with any information that the user might need to complete the quiz. It contains an Exit and Continues button inside. Clicking the exit button with take the user back to the home page of the quiz. If the user selects continue, the popup icon with be covered with a sliding page that holds the quiz container.
 
-This uses a width of 200% and hides the overflow. Using Javascript to add "current" tags to elements that is then targets by CSS to complete the display of the Quiz. The quiz contains 5 Different questions. Each question has a quetion amount and a score keeping header. When the user selects a correct answer the quiz score is increased by 1. When the user enters an incorrect answer the score is not changed and user can select the next question.
+This uses a width of 200% and hides the overflow. Using Javascript to add "current" tags to elements that are then targeted by CSS to complete the display of the Quiz. The quiz contains 5 Different questions. Each question has a question amount and a score-keeping header. When the user selects a correct answer the quiz score is increased by 1. When the user enters an incorrect answer the score is not changed and the user can select the next question.
 
-Once the user has completed the quiz, they are then take to a results popup. Using the current tag selector and javascript to hide the quiz tab and show the results information. It then uses javascript to show the user there score for the website. Lastly, the user has to option to try again, in which the quiz will be shown again and question and score will have been reset. Or select Home button to be taken back to the home page of the quiz.
+Once the user has completed the quiz, they are then taken to a results popup. Using the current tag selector and javascript to hide the quiz tab and show the results information. It then uses javascript to show the user their score for the website. Lastly, the user has to option to try again, in which the quiz will be shown again and the question and score will have been reset. Or select the Home button to be taken back to the home page of the quiz.
 
 ## **Technologies Used**
 
@@ -100,7 +100,7 @@ Once the user has completed the quiz, they are then take to a results popup. Usi
 9. [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     - MDN Web Docs was used to assist in javascript functionality and understanding.
 10. [Youtube](https://www.youtube.com/)
-    - Youtube was user to follow many different guides to help with Javascript functionality.
+    - Youtube was users to follow many different guides to help with Javascript functionality.
 
 ## **Testing**
 The W3C Markup Validator and W3C CSS Validator Services were used to test each page to make sure there were no syntax errors in the website.
@@ -131,11 +131,11 @@ The website responsiveness was tested in the browsers below.
 - Brave
 
 All testing of quiz functionality was correct and all working correctly.
-Each questions reports the correct answer to the user and displays the correct answer when incorrect answer is selected.
+Each question reports the correct answer to the user and displays the correct answer when an incorrect answer is selected.
 
 ## Bugs
-- First noticable bug is when the user selects to start the quiz. The popup icon shows and rest of the page is blured to allow the user to focus on the page. On the left hand side of the screen the blur overlaps the hidden overflow of the quiz background and container. So the user can see a faint blue line on the left side of the page.
-- Another issue that has been found is the responsiveness on mobile view. Due to the width of the page and sliding view of the quiz. I was unable to locate a solution to showing a smaller view on the mobile device.
+- First noticeable bug is when the user selects to start the quiz. The popup icon shows and the rest of the page is blurred to allow the user to focus on the page. On the left-hand side of the screen, the blur overlaps the hidden overflow of the quiz background and container. So the user can see a faint blue line on the left side of the page.
+- Another issue that has been found is the responsiveness on mobile view. Due to the width of the page and the sliding view of the quiz. I was unable to locate a solution to show a smaller view on the mobile device.
 
 ## Deployment
 ### Github Pages
@@ -165,8 +165,8 @@ Forking a repository will make a copy of that repository and edit without making
 
 ## Credits
 ### Website Content
-All Questions and information was provided by author and developer - Daniel Cave
-Javascript functionality of scoring, question number and display view ports was sourced from range of youtube guides and MDN Web Docs for assistance and help with functionality and understanding.
+All Questions and information were provided by author and developer - Daniel Cave
+Javascript functionality of scoring, question number and display viewports was sourced from a range of youtube guides and MDN Web Docs for assistance and help with functionality and understanding.
 ## Media
 - [Pexals](https://www.pexels.com/) - Hero image and workout plan preview plan images sourced and obtained from Pexals.
 
