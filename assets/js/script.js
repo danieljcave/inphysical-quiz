@@ -104,4 +104,7 @@ function headerScore(){
 function showResultBox() {
     quizBox.classList.remove('current');
     resultBox.classList.add('current');
+
+    const scoreText = document.querySelector('.score-text');
+    scoreText.textContent = `You Scored ${userScore} Out Of ${questions.length}`
 }
