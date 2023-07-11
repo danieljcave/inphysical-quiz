@@ -66,9 +66,9 @@ function questionSelected(answer){
     let correctAnswer = questions[questionCount].answer
     
     if (userAnswer === correctAnswer){
-        console.log('answer is correct')
+        answer.classList.add('correct')
     } else {
-        console.log('answer is incorrect')
+        answer.classList.add('incorrect')
     }
 }
 

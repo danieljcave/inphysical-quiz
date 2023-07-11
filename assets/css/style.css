@@ -247,6 +247,19 @@ body{
     transform: scale(1.03);
 }
 
+.quiz-questions .question.correct{
+    background: #007DA7;
+    border: 3px solid #00ff00;
+    color: #00ff00;
+    box-shadow: 0 0 3px 3px #00ff00;
+} 
+.quiz-questions .question.incorrect{
+    background: #007DA7;
+    border: 3px solid #ff0000;
+    color: #ff0000;
+    box-shadow: 0 0 3px 3px #ff0000;
+} 
+
 .quiz-box .quiz-footer{
     display: flex;
     justify-content: space-between;
