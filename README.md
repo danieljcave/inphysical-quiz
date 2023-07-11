@@ -168,7 +168,7 @@ Forking a repository will make a copy of that repository and edit without making
 All Questions and information were provided by author and developer - Daniel Cave
 Javascript functionality of scoring, question number and display viewports was sourced from a range of youtube guides and MDN Web Docs for assistance and help with functionality and understanding.
 ## Media
-- [Pexals](https://www.pexels.com/) - Hero image and workout plan preview plan images sourced and obtained from Pexals.
+- [Pexals](https://www.pexels.com/) - Background image sourced and found from Pexals.
 
 ## Special Acknowledgements
 - My Mentor **Spencer Barriball** for overall feedback and guidance along my project journey to improve the overall website and assist me as a developer.
