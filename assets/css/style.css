@@ -286,12 +286,15 @@ body{
     border-radius: .25rem;
     font-weight: bolder;
     cursor: pointer;
-    /* pointer-events: none; */
-    transition: .5s;
+    pointer-events: none;
 }
-
-.quiz-footer .next-btn:hover{
-    background: #007DA7;
+.quiz-footer .next-btn.current{
+    pointer-events: auto;
+    background-color: #007DA7;
     color: #f5f5f5;
     border: 2px solid #f5f5f5;
+}
+.quiz-footer .next-btn.current:hover{
+    color: #007DA7;
+    background: #f5f5f5;
 }

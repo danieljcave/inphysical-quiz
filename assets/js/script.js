@@ -38,6 +38,7 @@ nextBtn.onclick = () => {
     showQuestions(questionCount);
     questionNumb++;
     quizCounter(questionNumb);
+    nextBtn.classList.remove('current'); 
 }
     else{
         console.log('Question Complete')
@@ -85,6 +86,8 @@ function questionSelected(answer){
     for (let i = 0; i<allQuestions; i++){
         quizQuestions.children[i].classList.add('disabled');
     }
+
+    nextBtn.classList.add('current'); 
 }
 
 function quizCounter(i){
