@@ -54,6 +54,16 @@ function showQuestions(i){
     <div class="question"><span>${questions[i].options[3]}</span></div>`;
 
     quizQuestions.innerHTML = quizTag;
+
+    const question = document.querySelectorAll('.question');
+    for (let i = 0; i < question.length; i++){
+        question[i].setAttribute('onclick', 'questionSelected(this)');
+    }
+}
+
+function questionSelected(answer){
+    let userAnswer = answer.textContent;
+    console.log(userAnswer);
 }
 
 function quizCounter(i){
