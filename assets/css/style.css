@@ -369,8 +369,7 @@
 }
 
 /* Hover button */
- .buttons button:hover,
- .buttons a:hover{
+ .buttons button:hover {
      background: #f5f5f5;
      color: #007DA7;
      font-weight: bolder;
