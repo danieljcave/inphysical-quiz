@@ -3,11 +3,10 @@ const quizSection = document.querySelector('.quiz-section');
 const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.try-again-btn');
-const homeBtn = document.querySelector('.home-button');
 
 // Try again onclick current tag target and reset counters for user to try quiz again
 tryAgainBtn.onclick = () => {
-    quizBox.classList.add('current');
+    quizBox.classList.remove('current');
     nextBtn.classList.remove('current');
     resultBox.classList.remove('current');
 
@@ -17,19 +16,6 @@ tryAgainBtn.onclick = () => {
     showQuestions(questionCount);
     quizCounter(questionNumb);
     headerScore();
-};
-
-// Homepage button targetting for current tag
-homeBtn.onclick = () => {
-    quizSection.classList.remove('current');
-    nextBtn.classList.remove('current');
-    resultBox.classList.remove('current');
-
-    questionCount = 0;
-    questionNumb = 1;
-    userScore = 0;
-    showQuestions(questionCount);
-    quizCounter(questionNumb);
 };
 
 // Display Question counter as 0
@@ -115,13 +101,14 @@ function headerScore() {
 
 // Function to display user score in results
 function showResultBox() {
-    quizBox.classList.remove('current');
+    quizBox.classList.add('current');
     resultBox.classList.add('current');
 
     const scoreText = document.querySelector('.score-text');
     scoreText.textContent = `You Scored ${userScore} Out Of ${questions.length}`;
 }
 
+// Questions array
 let questions = [{
     numb: 1,
     question: 'When squatting which muscle is not used?',
@@ -181,3 +168,5 @@ let questions = [{
     ]
 },
 ];
+
+showQuestions(0);
