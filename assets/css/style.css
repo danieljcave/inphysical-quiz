@@ -14,6 +14,7 @@
      background-repeat: no-repeat;
      background-size: cover;
      transition: .25s ease;
+     height: 100vh;
 }
 /* Add current tag for js to blur background */
  .main.current{
@@ -35,8 +36,6 @@
 }
 /* Container box for quiz display */
  .cover-container{
-     position: relative;
-     left: -50%;
      width: 100%;
      align-items: center;
      justify-content: center;
@@ -153,14 +152,12 @@
 }
 /* Main display for quiz question section */
  .quiz-section{
-     position: relative;
-     left: -50%;
+    height: 100vh;
      width: 100%;
      background: #007DA7;
      display: flex;
      justify-content: center;
      align-items: center;
-     z-index: 100;
      transition: .5s ease-in-out;
      transition-delay: .25s;
 }
