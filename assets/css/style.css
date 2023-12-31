@@ -176,14 +176,14 @@
      flex-direction: column;
      padding: 1rem 2rem;
      transform: scale(.9);
-     transition: 0.3s ease;
-     transition-delay: 0s;
+     transition: .3s ease;
+     transition-delay: .5s;
 }
 /* Quiz current tag to display over home page */
  .quiz-section .quiz-box.current{
      opacity: 0;
-     transition: 1s ease;
-     transition-delay: 1s;
+     transition: .3s ease;
+     transition-delay: .5s;
 }
 /* Quic title for page */
  .quiz-box h1{
@@ -233,7 +233,7 @@
      cursor: pointer;
      font-size: 1.25rem;
      letter-spacing: .1rem;
-     transition: .3s;
+     transition: .5;
 }
 /* Add padding to quiz span inside of border */
  .quiz-questions .question span{
@@ -317,7 +317,7 @@
      opacity: 0;
      pointer-events: none;
      transition: .3s ease;
-     transition-delay: .3s;
+     transition-delay: .5s;
 }
 /* Quiz current tag to display results page */
  .quiz-section .result-box.current{
