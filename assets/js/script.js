@@ -1,36 +1,9 @@
-const quizStart = document.querySelector('.quiz-btn');
-const quizPopup = document.querySelector('.start-quiz-popup');
-const quizExit = document.querySelector('.exit-btn');
-const quizMain = document.querySelector('.main');
 const continueBtn = document.querySelector('.continue-btn');
 const quizSection = document.querySelector('.quiz-section');
 const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.try-again-btn');
 const homeBtn = document.querySelector('.home-button');
-
-// Add current tag for onclick targetting
-quizStart.onclick = () => {
-    quizPopup.classList.add('current');
-    quizMain.classList.add('current');
-};
-
-// Remove current tag for onclick targetting
-quizExit.onclick = () => {
-    quizPopup.classList.remove('current');
-    quizMain.classList.remove('current');
-};
-
-// Add current tag for onclick targetting with display question and counter
-continueBtn.onclick = () => {
-    quizSection.classList.add('current');
-    quizPopup.classList.remove('current');
-    quizMain.classList.remove('current');
-    quizBox.classList.add('current');
-    showQuestions(0);
-    quizCounter(1);
-    headerScore(0);
-};
 
 // Try again onclick current tag target and reset counters for user to try quiz again
 tryAgainBtn.onclick = () => {
