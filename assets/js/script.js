@@ -39,21 +39,6 @@ let questionNumb = 1;
 // Display user score as begginer 0
 let userScore = 0;
 
-const nextBtn = document.querySelector('.next-btn');
-
-// Next question button
-nextBtn.onclick = () => {
-    if (questionCount < questions.length - 1) {
-        questionCount++;
-        showQuestions(questionCount);
-        questionNumb++;
-        quizCounter(questionNumb);
-        nextBtn.classList.remove('current');
-    } else {
-        showResultBox();
-    }
-};
-
 const quizQuestions = document.querySelector('.quiz-questions');
 
 // Function to show each question and targets array in questions.js
@@ -100,6 +85,21 @@ function questionSelected(answer) {
 
     nextBtn.classList.add('current');
 }
+
+const nextBtn = document.querySelector('.next-btn');
+
+// Next question button
+nextBtn.onclick = () => {
+    if (questionCount < questions.length - 1) {
+        questionCount++;
+        showQuestions(questionCount);
+        questionNumb++;
+        quizCounter(questionNumb);
+        nextBtn.classList.remove('current');
+    } else {
+        showResultBox();
+    }
+};
 
 // Function to count quiz question
 function quizCounter(i) {
