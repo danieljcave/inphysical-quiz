@@ -74,7 +74,7 @@ function questionSelected(answer) {
 
 const nextBtn = document.querySelector('.next-btn');
 
-// Next question button
+// Next question button shows next question, once reaches end displays results message
 nextBtn.onclick = () => {
     if (questionCount < questions.length - 1) {
         questionCount++;
