@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
- body{
+
+body {
      font-family: 'Outfit', sans-serif;
      color: #f5f5f5;
      background: #17181A;
@@ -7,53 +8,61 @@
      padding: 0;
      overflow: hidden;
 }
+
 /* Main css to hold image background */
- .main{
-     background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, .6)), url("../images/background-image.jpg");
+.main {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, .6)), url("../images/background-image.jpg");
      background-position: center center;
      background-repeat: no-repeat;
      background-size: cover;
      transition: .25s ease;
      height: 100vh;
 }
+
 /* Add current tag for js to blur background */
- .main.current{
+.main.current {
      filter: blur(1rem);
 }
+
 /* Quiz container for overflow display */
- .quiz-container{
+.quiz-container {
      display: flex;
      height: 100%;
      width: 100%;
 }
+
 /* Title for display page */
- .cover-container h1{
+.cover-container h1 {
      font-size: 5rem;
      color: #f5f5f5;
      margin-bottom: 2.5rem;
      text-shadow: 2px 2px 2px black;
      margin: 0;
 }
+
 /* Container box for quiz display */
- .cover-container{
+.cover-container {
      width: 100%;
      align-items: center;
      justify-content: center;
      display: flex;
      margin: 0 auto;
 }
+
 /* Colum display */
- .quiz-colum{
-     display:flex;
+.quiz-colum {
+     display: flex;
      flex-direction: column;
 }
+
 /* Center items in quiz */
- .quiz-center{
+.quiz-center {
      justify-content: center;
      align-items: center;
 }
+
 /* Start quiz button */
- .quiz-btn{
+.quiz-btn {
      background-color: #007DA7;
      color: #f5f5f5;
      width: 17.5rem;
@@ -67,15 +76,17 @@
      letter-spacing: 0.1rem;
      border: 2px solid #f5f5f5;
 }
+
 /* Start button hover over button */
- .quiz-btn:hover{
+.quiz-btn:hover {
      box-shadow: 0 0 15px #f5f5f5;
      cursor: pointer;
      transition: transform 200ms;
      transform: scale(1.05);
 }
+
 /* Display page welcome text */
- .cover-container p{
+.cover-container p {
      color: #f5f5f5;
      text-align: center;
      width: 50%;
@@ -84,8 +95,9 @@
      font-weight: bolder;
      margin: 2rem 0 2rem 0;
 }
+
 /* Quiz popup information */
- .start-quiz-popup{
+.start-quiz-popup {
      position: absolute;
      top: 50%;
      left: 50%;
@@ -99,37 +111,42 @@
      pointer-events: none;
      transition: .25s ease;
 }
+
 /* Quiz popup to show information due to 'current' tag */
- .start-quiz-popup.current{
+.start-quiz-popup.current {
      opacity: 1;
      pointer-events: auto;
      transform: translate(-50%, -50%) scale(1);
 }
+
 /* Header for quiz popup */
- .start-quiz-popup h2{
+.start-quiz-popup h2 {
      color: #f5f5f5;
      font-size: 2.5rem;
      margin: 0;
      text-align: center;
 }
+
 /* Quiz popup information text */
- .start-quiz-popup .quiz-info{
+.start-quiz-popup .quiz-info {
      display: inline-block;
      color: #f5f5f5;
      font-size: 1rem;
      font-weight: bolder;
      margin: 0.5rem 0;
 }
+
 /* Quiz popup buttons */
- .start-quiz-popup .popup-btn{
+.start-quiz-popup .popup-btn {
      display: flex;
      align-items: center;
      justify-content: space-between;
      margin-top: .5rem;
      transition: 1s;
 }
+
 /* Quiz about button */
- .start-quiz-popup .popup-btn .about-btn{
+.start-quiz-popup .popup-btn .about-btn {
      display: inline-flex;
      align-items: center;
      justify-content: center;
@@ -145,14 +162,16 @@
      cursor: pointer;
      text-decoration: none;
 }
+
 /* Quiz hover button */
- .start-quiz-popup .popup-btn .about-btn:hover{
+.start-quiz-popup .popup-btn .about-btn:hover {
      background: transparent;
      color: #007DA7;
 }
+
 /* Main display for quiz question section */
- .quiz-section{
-    height: 100vh;
+.quiz-section {
+     height: 100vh;
      width: 100%;
      background: #007DA7;
      display: flex;
@@ -161,12 +180,14 @@
      transition: .5s ease-in-out;
      transition-delay: .25s;
 }
+
 /* Shows quiz section using 'current' tag */
- .quiz-section.current{
+.quiz-section.current {
      left: 0;
 }
+
 /* Quiz box holding questions and information */
- .quiz-section .quiz-box{
+.quiz-section .quiz-box {
      position: relative;
      width: 40rem;
      background: transparent;
@@ -179,21 +200,24 @@
      transition: .3s ease;
      transition-delay: .5s;
 }
+
 /* Quiz current tag to display over home page */
- .quiz-section .quiz-box.current{
+.quiz-section .quiz-box.current {
      opacity: 0;
      transition: .3s ease;
      transition-delay: .5s;
 }
+
 /* Quic title for page */
- .quiz-box h1{
+.quiz-box h1 {
      font-size: 3rem;
      margin: 0 0 1rem 0;
      text-align: center;
      letter-spacing: .1rem;
 }
+
 /* Quiz heading for quiz name */
- .quiz-box .quiz-header{
+.quiz-box .quiz-header {
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -201,29 +225,33 @@
      border-bottom: 3px solid #f5f5f5;
      border-top: 3px solid #f5f5f5;
 }
+
 /* Quiz header span text */
- .quiz-header span{
+.quiz-header span {
      font-size: 1.5rem;
      font-weight: bolder;
      letter-spacing: .1rem;
 }
+
 /* Quiz header score for user */
- .quiz-header .header-score{
+.quiz-header .header-score {
      background: #f5f5f5;
      color: #007DA7;
      border-radius: .5rem;
      padding: .5rem;
 }
+
 /* Quiz question title */
- .quiz-box .question-title{
+.quiz-box .question-title {
      font-size: 1.25rem;
      font-weight: bold;
      letter-spacing: .1rem;
      text-align: center;
      margin-top: 2.5rem;
 }
+
 /* Quiz list of questions user then selects */
- .quiz-questions .question{
+.quiz-questions .question {
      width: 100%;
      padding: 1rem 0;
      margin-bottom: 1rem;
@@ -235,48 +263,56 @@
      letter-spacing: .1rem;
      transition: .5;
 }
+
 /* Add padding to quiz span inside of border */
- .quiz-questions .question span{
+.quiz-questions .question span {
      padding: 1rem;
 }
+
 /* Quiz hover over questions to display which option to choose */
- .quiz-questions .question:hover{
+.quiz-questions .question:hover {
      background-color: rgba(0, 0, 0, .75);
      color: #f5f5f5;
      transform: scale(1.03);
 }
+
 /* Display correct answer using green text, border and glow */
- .quiz-questions .question.correct{
+.quiz-questions .question.correct {
      background: #007DA7;
      border: 3px solid #00ff00;
      color: #00ff00;
      box-shadow: 0 0 3px 3px #00ff00;
 }
+
 /* Displays incorrect answer using red text, border and glow */
- .quiz-questions .question.incorrect{
+.quiz-questions .question.incorrect {
      background: #007DA7;
      border: 3px solid #ff0000;
      color: #ff0000;
      box-shadow: 0 0 3px 3px #ff0000;
 }
+
 /* Stops user selecting more than one answer */
- .quiz-questions .question.disabled{
+.quiz-questions .question.disabled {
      pointer-events: none;
 }
+
 /* Quiz footer */
- .quiz-box .quiz-footer{
+.quiz-box .quiz-footer {
      display: flex;
      justify-content: space-between;
      align-items: center;
      margin-top: 1rem;
 }
+
 /* Quiz total question list */
- .quiz-footer .quiz-total{
+.quiz-footer .quiz-total {
      font-size: 1rem;
      font-weight: bolder;
 }
+
 /* Next button to next question */
- .quiz-footer .next-btn{
+.quiz-footer .next-btn {
      width: 5rem;
      height: 2rem;
      background: rgba(255, 255, 255, 0.1);
@@ -288,20 +324,23 @@
      cursor: pointer;
      pointer-events: none;
 }
+
 /* Next button to display question and enable to be clicked */
- .quiz-footer .next-btn.current{
+.quiz-footer .next-btn.current {
      pointer-events: auto;
      background-color: #007DA7;
      color: #f5f5f5;
      border: 2px solid #f5f5f5;
 }
+
 /* Button hover styling to show use which is selected */
- .quiz-footer .next-btn.current:hover{
+.quiz-footer .next-btn.current:hover {
      color: #007DA7;
      background: #f5f5f5;
 }
+
 /* Quiz result box container */
- .quiz-section .result-box{
+.quiz-section .result-box {
      position: absolute;
      top: 50%;
      left: 50%;
@@ -319,29 +358,33 @@
      transition: .3s ease;
      transition-delay: .5s;
 }
+
 /* Quiz current tag to display results page */
- .quiz-section .result-box.current{
+.quiz-section .result-box.current {
      opacity: 1;
      pointer-events: auto;
      transform: translate(-50%, -50%) scale(1);
 }
+
 /* Results heading */
- .result-box h2{
+.result-box h2 {
      font-size: 2.5rem;
      font-weight: bolder;
      letter-spacing: .1rem;
      margin: 1rem;
 }
+
 /* Container for results of quiz */
- .result-box .results-container{
+.result-box .results-container {
      width: 25rem;
      display: flex;
      flex-direction: column;
      align-items: center;
      margin: 1rem 0 1rem;
 }
+
 /* Results score of quiz */
- .results-container .score-text{
+.results-container .score-text {
      font-size: 2rem;
      font-weight: bolder;
      border-bottom: 3px solid #f5f5f5;
@@ -350,8 +393,9 @@
      letter-spacing: .1rem;
      margin: 1rem;
 }
+
 /* Results buttons for try again or homepage */
- .buttons button{
+.buttons button {
      width: 7.5rem;
      height: 3rem;
      background: #007DA7;
@@ -363,14 +407,55 @@
      margin: 1rem;
      font-weight: bolder;
 }
+
 .buttons a {
      text-decoration: none;
      color: white;
 }
 
 /* Hover button */
- .buttons button:hover {
+.buttons button:hover {
      background: #f5f5f5;
      color: #007DA7;
      font-weight: bolder;
+}
+
+/* ----------------------- Media Queries */
+/* Active for screen sizes under 576px */
+@media (max-width:576px) {
+     /* ------------------ Home Page  */
+     .cover-container h1 {
+          font-size: 3rem;
+          text-align: center;
+     }
+     .cover-container p {
+          width: 80%;
+     }
+     .quiz-btn {
+          width: 12.5rem;
+          padding: 1rem 0;
+     }
+     /* ------------------ Home Page Quiz Popup */
+     .start-quiz-popup {
+          width: 15rem;
+          padding: 1rem;
+     }
+}
+
+/* Active for screen sizes between 576px and 768px */
+@media (min-width: 576px) and (max-width: 768px) {
+     /* ------------------ Home Page  */
+     .cover-container h1{
+          font-size: 4rem;
+     }
+     .cover-container p {
+          width: 60%;
+     }
+     .quiz-btn {
+          width: 15rem;
+     }
+     /* ------------------ Home Page Quiz Popup */
+     .start-quiz-popup {
+          width: 22.5rem;
+     }
 }
