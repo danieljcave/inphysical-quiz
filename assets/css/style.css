@@ -239,6 +239,7 @@ body {
      color: #007DA7;
      border-radius: .5rem;
      padding: .5rem;
+     text-align: center;
 }
 
 /* Quiz question title */
@@ -252,8 +253,7 @@ body {
 
 /* Quiz list of questions user then selects */
 .quiz-questions .question {
-     width: 100%;
-     padding: 1rem 0;
+     padding: 1rem;
      margin-bottom: 1rem;
      background: transparent;
      border: 2px solid rgba(255, 255, 255, 0.75);
@@ -262,11 +262,6 @@ body {
      font-size: 1.25rem;
      letter-spacing: .1rem;
      transition: .5;
-}
-
-/* Add padding to quiz span inside of border */
-.quiz-questions .question span {
-     padding: 1rem;
 }
 
 /* Quiz hover over questions to display which option to choose */
@@ -443,6 +438,10 @@ body {
      /* ------------------ Quiz Page */
      .quiz-section .quiz-box {
           padding: 1rem;
+     }
+     .quiz-box .quiz-header {
+          text-align: center;
+          display: inline;
      }
 }
 
