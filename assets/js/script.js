@@ -96,7 +96,7 @@ function quizCounter(i) {
 // Function to display user score in header
 function headerScore() {
     const headerScoreText = document.querySelector('.header-score');
-    headerScoreText.textContent = `Score ${userScore} / ${questions.length}`;
+    headerScoreText.textContent = `${userScore} / ${questions.length}`;
 }
 
 // Function to display user score in results

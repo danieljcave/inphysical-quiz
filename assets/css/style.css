@@ -234,7 +234,7 @@ body {
 }
 
 /* Quiz header score for user */
-.quiz-header .header-score {
+.quiz-header .quiz-header-score {
      background: #f5f5f5;
      color: #007DA7;
      border-radius: .5rem;
@@ -438,6 +438,10 @@ body {
      /* ------------------ Home Page Quiz Popup */
      .start-quiz-popup {
           width: 15rem;
+          padding: 1rem;
+     }
+     /* ------------------ Quiz Page */
+     .quiz-section .quiz-box {
           padding: 1rem;
      }
 }
