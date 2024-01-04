@@ -240,6 +240,7 @@ body {
      border-radius: .5rem;
      padding: .5rem;
      text-align: center;
+     margin-bottom: 0.5rem;
 }
 
 /* Quiz question title */
@@ -248,7 +249,6 @@ body {
      font-weight: bold;
      letter-spacing: .1rem;
      text-align: center;
-     margin-top: 2.5rem;
 }
 
 /* Quiz list of questions user then selects */
@@ -439,6 +439,10 @@ body {
      .quiz-box .quiz-header {
           text-align: center;
           display: inline;
+          padding: 0;
+     }
+     .quiz-questions .question {
+          margin-bottom: 0.5rem;
      }
 }
 
