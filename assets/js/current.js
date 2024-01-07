@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const quizStart = document.querySelector('.quiz-btn');
 const quizPopup = document.querySelector('.start-quiz-popup');
 const quizMain = document.querySelector('.main');
