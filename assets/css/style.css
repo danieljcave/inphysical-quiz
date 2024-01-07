@@ -104,8 +104,6 @@ body {
      height: 2.5rem;
      border: 2px solid #f5f5f5;
      border-radius: 0.25rem;
-     font-size: 1rem;
-     font-weight: 700;
      padding: 0 0.25rem;
      cursor: pointer;
      text-decoration: none;
@@ -462,9 +460,75 @@ body {
 }
 
 /* ----------------------- Media Queries */
+/* Active for extra small devices */
+@media (max-width: 340px){
+     /* ------------------ Home Page  */
+     .cover-container h1 {
+          font-size: 2.5rem;
+     }
+     .cover-container p{
+          width: 90%;
+          font-size: 0.9rem;
+     }
+     .quiz-btn {
+          width: 10rem;
+          padding: 1rem 0;
+     }
+     /* ------------------ Home Page Quiz Popup */
+     .start-quiz-popup {
+          width: 15rem;
+          padding: 1rem;
+     }
+     /* ------------------ Quiz Page */
+     .quiz-section .quiz-box {
+          padding: .5rem;
+     }
+     .quiz-box h2 {
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+     }
+     .quiz-box .question-title {
+          font-size: 1rem;
+     }
+     .quiz-box .quiz-header {
+          text-align: center;
+          display: inline;
+          padding: 0;
+     }
+     .quiz-questions .question {
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+          padding: 0.5rem;
+     }
+     .quiz-questions .question-title{
+          font-size: 1rem;
+     }
+     .quiz-footer .quiz-total {
+          width: 5rem;
+     }
+     .quiz-box .quiz-footer {
+          margin-top: 0.5rem;
+     }
+     .cancel-btn {
+          width: 5rem;
+          height: 2rem;
+     }
+     .quiz-footer .next-btn {
+          width: 5rem;
+          height: 2rem;
+     }
+     /* Quiz Results Popup */
+     .quiz-section .result-box {
+          width: 20rem;
+     }
+     .result-box .results-container {
+          width: 20rem;
+          text-align: center;
+     }
+}
 
-/* Active for screen sizes under 576px */
-@media (max-width:576px) {
+/* Active for screen sizes between 320px and 576px */
+@media (min-width:340px) and (max-width:576px) {
      /* ------------------ Home Page  */
      .cover-container h1 {
           font-size: 3rem;
