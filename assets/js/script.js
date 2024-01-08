@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-const quizSection = document.querySelector('.quiz-section');
+/*exported questionSelected */
 const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 const tryAgainBtn = document.querySelector('.try-again-btn');
