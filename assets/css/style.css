@@ -568,6 +568,14 @@ body {
           width: 5rem;
           height: 2rem;
      }
+     /* Quiz Results Popup */
+     .quiz-section .result-box {
+          width: 20rem;
+     }
+     .result-box .results-container {
+          width: 20rem;
+          text-align: center;
+     }
 }
 
 /* Active for screen sizes between 576px and 768px */
