@@ -54,7 +54,7 @@ Live version of the site avalible - <a href="https://danieljcave.github.io/inphy
 
 ## **User Experience**
 ### Target Audience
-The target audience of the quiz is all users that are interested in fitness and exercise. The Audience is new beginners entering the fitness journey. Or experienced users with years of training and knowledge. The quiz is free and designed for new users and experienced users to test their knowledge.
+The target audience of the quiz is all users who are interested in fitness and exercise. The Audience is new beginners entering the fitness journey. Or experienced users with years of training and knowledge. The quiz is free and designed for new users and experienced users to test their knowledge.
 
 ### Website Goals
 The primary goal of the website is to operate a functional quiz that users can use and enjoy to test their knowledge. Another goal of the website is to expand the quiz as more users complete the quiz tasks. To help new users learn and test the experienced users with harder questions.
@@ -66,13 +66,13 @@ The primary goal of the website is to operate a functional quiz that users can u
 3. Have a range of questions for the user to test their knowledge on.
 
 ### Returning Visitor Goals
-1. To have users that did not score all questions correctly try again for the top score.
+1. To have users who did not score all questions correctly try again for the top score.
 2. Test their knowledge on each question and allow them to experience the quiz.
 3. Center point for returning users with updating questions.
 
 ## **Design**
 ### Color Scheme
-- In the website design I had chosen to use 5 colors. First being #f5f5f5 (Off-White) and 17181A (Dark Grey). When first thinking of how the website should look, the primary goal was a clean and simplistic-looking site. The Main colour of the quiz is (Navy Blue) 007DA7 this is a dark blue that gives the quiz a sleek and professional view. All of the text uses the Off White colour to display over the blue. Both Red and Green are used for answering questions and displaying Green, for correct answers and Red for incorrect answers.
+- In the website design I had chosen to use 5 colors. First being #f5f5f5 (Off-White) and 17181A (Dark Grey). When first thinking of how the website should look, the primary goal was a clean and simplistic-looking site. The Main colour of the quiz is (Navy Blue) 007DA7 this is a dark blue that gives the quiz a sleek and professional view. All of the text uses the Off-White colour to display over the blue. Both Red and Green are used for answering questions and displaying Green, for correct answers and Red for incorrect answers.
 ![Color Palette](/readME-assets/images/color_palette.png)
 
 ### Imagery
@@ -81,12 +81,12 @@ The primary goal of the website is to operate a functional quiz that users can u
 ### Typography
 - When selecting the font to choose, the same goals were alongside the colour scheme. To find a clean and simplistic font that gives the website the look of professional and friendly. The font that was chosen was "Outfit" a free available font found on [Google Fonts](https://fonts.google.com/)
 
-### Responsivness
-The website is fully responsive for all devices. The website has media queriy tags for all size of devices. The Quiz is made fully responsive for all devices down to 320px width, An example would be the iPhone 4 is the current smallest device. All the way up to Extra Large Devices 1200px and up.
+### Responsiveness
+The website is fully responsive for all devices. The website has media query tags for all sizes of devices. The Quiz is made fully responsive for all devices down to 320px width, An example would be the iPhone 4 is the current smallest device. Up to Extra Large Devices 1200px and up.
 
 ## **Features**
 ### Homepage
-The Homepage is the first thing that a user sees when entering the webiste. It displays the title of the Quiz along with a small excerp of what the quiz is for. Giving the user a small amout of information before they enter the quiz.
+The Homepage is the first thing that a user sees when entering the website. It displays the title of the Quiz along with a small excerpt of what the quiz is for. Give the user a small amount of information before they enter the quiz.
 ![Homepage View](/readME-assets/images/homepage.png)
 <details>
 <summary>Homepage View Mobile</summary>
@@ -97,7 +97,7 @@ The Homepage is the first thing that a user sees when entering the webiste. It d
 ### Homepage Popup
 The Homepage popup is used for the user to start the quiz. It displays a pop that the user can then start the quiz or exit if they change their minds. The quiz has a guide for the user to follow and holds information about what the quiz is and how the quiz works. Giving them the information before they start.
 
-The popup uses current tags for the class. When the start quiz button is clicked the current.js tag uses a onlcik event to add current tags that display the popup using opactiy css to display.
+The popup uses current tags for the class. When the start quiz button is clicked the current.js tag uses an on-click event to add current tags that display the popup using opacity css to display.
 ![Homepage Popup View](/readME-assets/images/quiz-popup.png)
 <details>
 <summary>Homepage Popup Mobile</summary>
@@ -106,9 +106,9 @@ The popup uses current tags for the class. When the start quiz button is clicked
 </details>
 
 ### Quiz Page
-The quiz page holds the main functionality of the quiz for the user. It holds all of the questions for the user to answer. It displays the score counter, that keeps track of the users current score and the total score at the end.
+The quiz page holds the main functionality of the quiz for the user. It holds all of the questions for the user to answer. It displays the score counter, that keeps track of the user's current score and the total score at the end.
 
-The Quiz also displays the questions title and the options for the user to select. Each question has four options and one correct answer. If the user wants to restart the quiz or cancel the quiz. They can select the 'Cancel' Button on the quiz page to cancel
+The Quiz also displays the question title and the options for the user to select. Each question has four options and one correct answer. If the user wants to restart the quiz or cancel the quiz. They can select the 'Cancel' Button on the quiz page to cancel
 ![Quiz Page View](/readME-assets/images/quiz-page.png)
 <details>
 <summary>Quiz Page Mobile View</summary>
@@ -117,9 +117,9 @@ The Quiz also displays the questions title and the options for the user to selec
 </details>
 
 ### Quiz Questions
-The quiz questions will show an correct or incorrect answer when a user selects an option. If the user selects a correct answer it will display a green glow border.
+The quiz questions will show a correct or incorrect answer when a user selects an option. If the user selects a correct answer it will display a green glow border.
 
-If the user selects a incorrect answer it will display a red glow border around the option that is selected and then a green glow will display around the correct answer.
+If the user selects an incorrect answer it will display a red glow border around the option that is selected and then a green glow will display around the correct answer.
 
 The next button will be greyed out and unable to be clicked until the user has selected an option. Once the option has been selected the next button will be able to be selected and all the questions will have a a pointer event of none, so they cannot keep selecting the options.
 <details>
@@ -134,9 +134,9 @@ The next button will be greyed out and unable to be clicked until the user has s
 </details>
 
 ### Quiz Results
-The quiz results are to display the users score at the end of the quiz. Once the user has completed all the questions they can then view their score. It will show total score of all the correct answers. 
+The quiz results are to display the user's score at the end of the quiz. Once the user has completed all the questions they can then view their score. It will show the total score of all the correct answers. 
 
-The user can then select an option to try again, if they want to do it again or beat there score. Or the user can select home to go back to the home page.
+The user can then select an option to try again if they want to do it again or beat their score. Or the user can select home to go back to the home page.
 ![Quiz Results Mobile View](/readME-assets/images/quiz-results.png)
 
 <details>
@@ -146,9 +146,9 @@ The user can then select an option to try again, if they want to do it again or 
 </details>
 
 ### Future Features
-- A timer would be a good adition to the quiz, as it puts another varible to the users experiance. It will have a set time for the user to complete the questions, this will help with the user presure and deter any cheating by googling the answers.
-- API, an api would be a good adition to the quiz as it can select a range of questions for the user to complete and when they complete the quiz again the questions will be different or in a different order to test the users knowledge further.
-- Final feature that i would like to introduce is a scoreboard 
+- A timer would be a good addition to the quiz, as it puts another variable to the user's experience. It will have a set time for the user to complete the questions, this will help with the user pressure and deter any cheating by googling the answers.
+- API, an API would be a good addition to the quiz as it can select a range of questions for the user to complete and when they complete the quiz again the questions will be different or in a different order to test the user's knowledge further.
+- The final feature that I would like to introduce is a scoreboard 
 
 ## **Technologies Used**
 ### Programming Languages
@@ -163,7 +163,7 @@ The user can then select an option to try again, if they want to do it again or 
 3. [Google Fonts](https://fonts.google.com/)
     - Google Fonts was used to import the "Outfitt" Font to the style.css and to be used on the website.
 4. [Google Docs](https://docs.google.com)
-    - Primarily used for Pre note planning and for making notes and planning.
+    - Primarily used for pre-note planning and for making notes and planning.
 5. [Font Awesome](https://fontawesome.com/)
     - Font Awesome provides free icons that were used on the website pages.
 6. [Git](https://git-scm.com/)
@@ -172,14 +172,14 @@ The user can then select an option to try again, if they want to do it again or 
     - Github was used to store the website code when created on VSCode and pushed with Git.
     - The website is also hosted via GitHub pages.
 8. [VSCode Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-    - Prettier Formater was used in vs code to beautify and format the code for best practices.
+    - Prettier Formater was used in VS code to beautify and format the code for best practices.
 9. [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     - MDN Web Docs was used to assist in javascript functionality and understanding.
 10. [Youtube](https://www.youtube.com/)
-    - Youtube was users to follow many different guides to help with Javascript functionality.
+    - YouTube allows users to follow many different guides to help with Javascript functionality.
 
 ## **Testing**
-The W3C Markup Validator and W3C CSS Validator Services were used to test each of the html pages to make sure there were no syntax errors in the website. Then JSHint was used to test the javascript code.
+The W3C Markup Validator and W3C CSS Validator Services were used to test each of the HTML pages to make sure there were no syntax errors in the website. Then JSHint was used to test the javascript code.
 ### W3C Markup Validator
 <details><summary>Home Page HTML Validation</summary>
 
@@ -192,11 +192,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to test each o
 </details>
 
 ### W3C CSS Validator
-When testing the css validator, there were 8 warning that were displayed. This first was that the font was imported into the css. This was corrected by importing the font directly to the home page as good html, css practices.
+When testing the css validator, 8 warnings were displayed. The first was that the font was imported into the css. This was corrected by importing the font directly to the home page as good HTML and CSS practices.
 
-The next warning was that the next button that used a opacity of 0.1 to display as unuseable was fixed by changed the color on each color by one value. This kept the color alsmost the same and fixed the warning.
+The next warning was that the next button that used an opacity of 0.1 to display as unusable was fixed by changing the colour on each colour by one value. This kept the colour almost the same and fixed the warning.
 
-Final issue was the pointer event as auto was not defined by any specification but was supported by browsers. So i had changed the value from auto to inherit. This inherited the value and since the buttons default was to be clicked. This solveed the warning and the css passwed with no warnings or errors.
+The final issue was the pointer event as auto was not defined by any specification but was supported by browsers. So I changed the value from auto to inherit. This inherited the value and since the button default was to be clicked. This solved the warning and the css passed with no warnings or errors.
 
 <details><summary>Style Sheet CSS Validation Warnings</summary>
 
@@ -246,7 +246,7 @@ Each question reports the correct answer to the user and displays the correct an
 
 ~~Another issue that has been found is the responsiveness on mobile view. Due to the width of the page and the sliding view of the quiz. I was unable to locate a solution to show a smaller view on the mobile device.~~
 
-All bugs were fixed as the quiz was seperated onto two pages and code was restructed to work as seperate pages. Along with media queries were added to allow for all devices. From extra small (320px wide) all the was too extra large (1200px wide) and above
+All bugs were fixed as the quiz was separated into two pages and the code was restructured to work as separate pages. Along with media queries were added to allow for all devices. From extra small (320px wide) all the way too extra-large (1200px wide) and above
 
 ## **Deployment**
 ### Github Pages
@@ -271,13 +271,13 @@ If there are any issues with cloning the repository, GitHub has a detailed guide
 ### Forking the Repository
 Forking a repository will make a copy of that repository and edit without making any changes to the original repository to mainly test ideas or changes with the repository.
 1. Log into GitHub and navigate to the project repository [InPhysical Quiz](https://github.com/danieljcave/inphysical-quiz)
-2. Scroll to the top of the repository to top where there is an option called "Fork"
+2. Scroll to the top of the repository, where there is an option called "Fork"
 3. This will then allow you to make a copy of the repository in your GitHub account.
 
 ## **Credits**
 ### Website Content
 All Questions and information were provided by author and developer - Daniel Cave
-Javascript functionality of scoring, question number and display viewports was sourced from a range of youtube guides and MDN Web Docs for assistance and help with functionality and understanding.
+Javascript functionality of scoring, question number and display viewports was sourced from a range of YouTube guides and MDN Web Docs for assistance and help with functionality and understanding.
 ## Media
 - [Pexals](https://www.pexels.com/) - Background image sourced and found from Pexals.
 
